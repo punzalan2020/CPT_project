@@ -1,11 +1,7 @@
-#div1 {
-	background-image: url('../images/hardware_banner.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
-    font-size:300%;
-    color:white;
-    text-align:center;
-	text-shadow: 2px 2px 10px #000000;
+#hardware {
+	width:525px;
+	height:225px;
+	float: right;
 }
 
 #div3 {
