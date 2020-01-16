@@ -166,8 +166,40 @@ else if (ans===10){
 		document.getElementById("myImg").src="./images/no.png"
     }
     document.view.qscore.value=score
-}       
-        
+}    
+
+else if (ans===11){ 
+	y = document.getElementById("qans").value
+    if(yy==="A"){
+        document.getElementById("question").value="You are right"
+        score++
+		right.play();
+		document.getElementById("myImg").src="./images/yes.png"
+	}
+    else {
+        document.getElementById("question").value="You are wrong"
+        wrong.play();
+		document.getElementById("myImg").src="./images/no.png"
+    }
+    document.view.qscore.value=score
+}    
+
+else if (ans===12){ 
+	y = document.getElementById("qans").value
+    if(yy==="B"){
+        document.getElementById("question").value="You are right"
+        score++
+		right.play();
+		document.getElementById("myImg").src="./images/yes.png"
+	}
+    else {
+        document.getElementById("question").value="You are wrong"
+        wrong.play();
+		document.getElementById("myImg").src="./images/no.png"
+    }
+    document.view.qscore.value=score
+}    
+	
 	ans++; 
 }
         
@@ -232,6 +264,17 @@ else if (i===10){
 	document.view.question.value ="In The 'Southern Air Temple', what was the score in the air game between Aang and Sokka? \na)Aang-10, Sokka-0 \nb)Aang-5, Sokka-0 \nc)Aagn-8, Sokka-0 \nd)Aang-7, Sokka-0";
     document.view.qans.value=""
 }      
-     
+
+else if (i===11){ 
+	document.view.qnum.value=i;	
+	document.view.question.value ="How many Di Lee agents did Azula banish \na)7 \nb)8 \nc)9 \nd)10";
+    document.view.qans.value=""
+}
+	
+else if (i===12){ 
+	document.view.qnum.value=i;	
+	document.view.question.value ="What is Iroh's favourite tea? \na)Green Tea \nb)Jasmine Tea \nc)Oolong Tea \nd)Black Tea";
+    document.view.qans.value=""
+}      
     i++; 
 }
