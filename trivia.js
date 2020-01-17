@@ -199,7 +199,22 @@ else if (ans===12){
     }
     document.view.qscore.value=score
 }    
-        
+
+else if (ans===13){ 
+	y = document.getElementById("qans").value
+    if(yy==="D"){
+        document.getElementById("question").value="You are right"
+        score++
+		right.play();
+		document.getElementById("myImg").src="./images/yes.png"
+	}
+    else {
+        document.getElementById("question").value="You are wrong"
+        wrong.play();
+		document.getElementById("myImg").src="./images/no.png"
+    }
+    document.view.qscore.value=score
+}    
 	ans++; 
 }
         
@@ -276,6 +291,11 @@ else if (i===12){
 	document.view.question.value ="What is Iroh's favourite tea? \na)Green Tea \nb)Jasmine Tea \nc)Oolong Tea \nd)Black Tea";
     document.view.qans.value=""
 }  
-     
+  
+else if (i===13){ 
+	document.view.qnum.value=i;	
+	document.view.question.value ="How high did Sokka think Aang flew in the air when he sneezed? \na)100 feet \nb)50 feet \nc)20 feet \nd)10 feet";
+    document.view.qans.value=""
+}  
     i++; 
 }
