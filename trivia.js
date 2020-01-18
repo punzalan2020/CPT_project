@@ -52,6 +52,7 @@ else if (ans===3){
     else {
         document.getElementById("question").value="You are wrong"
         wrong.play();
+	    document.getElementById("myImg").src="./images/no.png"
     }
     document.view.qscore.value=score
 }    
