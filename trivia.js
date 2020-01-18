@@ -48,14 +48,14 @@ else if (ans===3){
         score++
 		right.play();
 		document.getElementById("myImg").src="./images/yes.png"
-	}
+    }
     else {
         document.getElementById("question").value="You are wrong"
         wrong.play();
-	    document.getElementById("myImg").src="./images/no.png"
+		document.getElementById("myImg").src="./images/no.png"
     }
     document.view.qscore.value=score
-}    
+}
 
 
 else if (ans===4){ 
