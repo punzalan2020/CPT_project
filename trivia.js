@@ -57,6 +57,7 @@ else if (ans===3){
     document.view.qscore.value=score
 }    
 
+
 else if (ans===4){ 
 	y = document.getElementById("qans").value
     if(yy==="D"){
